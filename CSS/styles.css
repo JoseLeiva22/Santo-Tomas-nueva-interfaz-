@@ -1,0 +1,458 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+header{
+    width: 100%;
+    min-height: 80px;
+    margin: auto;
+    background: #00443B;
+    display: flex;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+    z-index: 200;
+}
+
+.contenedor{
+    width: 97%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* padding: 0px 0 0px 0; */
+    
+ }
+ 
+.titulo{
+    color: white;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+}
+.amarillo{
+    color: #fdbb05;
+    /* background-color: #095833; */
+
+}
+
+
+body{
+    
+    margin-left: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+body{
+    background-image: url(/Images/bg-body.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.menu-btn{
+    width: 20px;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-self: auto;
+    transform: translateX(10px);
+    position: absolute;
+}
+.menu_icono{
+    position: relative;
+    color: #FFF;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.menu-btn{
+    padding: 30px 0.1px 20px;
+    align-items: start;
+    left: 10px;
+}
+
+/* ------Menu header ------------------------------------------- */
+.nav-bar a{
+    /* border: 20px;
+    margin: 15px;  */
+    padding: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:15px;
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-bar a:hover{
+    background-color:#0d5d3d;
+    border: #0d5d3d;
+}
+
+/* ----------navegador lateral--------------------------------------- */
+.menu_side{
+    width: 80px;
+    height: 100% ;
+    background-color: #1e343d;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    z-index: 300;
+    overflow: hidden;
+    border-right: 20px solid #1e343d;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* ocultar para chrome,safari y opera */
+.menu_side::-webkit-scrollbar{
+    display: none;
+}
+/* ocultar para firefox */
+.menu_side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu_side a{
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 5px;
+    transition: color 300ms ;
+}
+
+.menu_side a:hover{
+    color: #ffffff;
+}
+
+/* -----------options menu------------  */
+.menu_options{
+    padding: 20px 15px;
+    position: absolute;
+    top: 80px;
+
+}
+
+.menu_options a:hover{
+    color: white;
+}
+
+.menu_options a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+
+}
+.menu_options .option .icono{
+    width: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.icono:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.menu_options h3{
+    width: 80px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.menu_options .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.body_move{
+    margin-left: 190px;
+}
+
+.menu_side_move{
+    width: 190px;
+}
+
+@media screen and(max-width: 760px) {
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu_side_move{
+        width: 80px;
+        left: -80px;
+    }
+    .icono{
+        transform: translateX(10px);
+        cursor: pointer;
+    }
+}
+
+/* -------------------------Body-Contenido-------------------------------------------- */
+
+.contenedor-card-uno{
+    width: 50%;
+    
+}
+/* ----------------------------section--------------------- */
+section{
+    background-color: #e1e1e16f;
+     /* e1e1e16f */
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    margin: 30px auto;
+    width: 70%;
+    max-width: 1200px;
+    box-shadow: 0 6px 12px 3px rgba(0, 0, 0, 0.519);
+}
+
+section h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #6a6a6a;
+    margin: 5px;
+    padding: 3px;
+}
+
+.contenedor-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
+}
+
+.div_notas .notas-icono{
+    margin: 1px;
+    padding: 1px;
+    float: left;
+    font-size: 40px;
+    color: #fd8505;
+    align-items: center;
+
+}
+
+.div_notas a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #078e10;
+    text-align: center;
+    display: inline-flex;
+    padding: 15px;
+}
+
+.div_notas{
+    border-bottom: 3px #6a6a6a solid;
+    padding-bottom: 4px;
+}
+
+/* -----------------------Contenedor Formación e identidad --------------------------------------- */
+.formacion-identidad-titulo{
+    margin:1px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.contenedor-formacion{
+    overflow: auto;
+    display:inline-block;
+    padding: 3px;
+}
+
+.contenedor-formacion a{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: #cbcbcb;
+
+}
+
+.contenedor-formacion a:hover{
+    background-color: #b2b2b2bd;
+}
+
+
+.formacion-identidad{
+    border-bottom: 3px #6a6a6a solid;
+    
+}
+
+/* ---------Contenedor  Lo mas consultado de tu sede------- */
+.contenedor-card-dos{
+    width: 50%; 
+}
+
+.contenedor-servicios{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.consulta a{
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fd8505;
+    color: #FFF;
+    display: flex;
+    padding: 17px;
+    margin: 15px;
+    
+}
+
+.contenedor-card-tres{
+    width: 100%;
+    height: 20%;
+}
+
+.contenedor-novedades{
+    
+    overflow: auto;
+    display:inline-block;
+    
+
+}
+
+.contenedor-novedades-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.contenedor-novedades img{
+    width: 210px;
+    height: 140px;
+    /* padding: 5px; */
+}
+
+.contenedor-novedades-item a{
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 12px;
+    text-align:justify;
+    color: #078e10;
+    display: flex;
+    height: 50px!Important;
+    margin-top: 5px;
+    width: 210px;
+  }
+
+  /* --------------------Slider---------------------------------------- */
+.contenedor-slider{
+    display:inline;
+} 
+
+
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 230px;
+    overflow:hidden;
+    background-color: black;
+    
+}
+
+.slider img{
+    margin: 0 auto;
+    -moz-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+    width: 1200px;
+    height: 230px;
+    position: absolute;
+    opacity: 0;
+}
+
+#slider img:nth-child(1){
+    opacity: 1;
+}
+
+
+/* ---------------------Footer------------------------------------ */
+footer{
+    background: #1e343d;
+    bottom: 0 !important; 
+    margin: auto;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 10px 0 10px 0;
+    margin-top: 5%;
+}
+
+.container-logo{
+    width: 50%;
+    /* position: relative; */
+    padding: 10px;
+    border: 1px;
+    /* text-align: center; */
+}
+
+.logo{
+    width: 25%; 
+}
+
+.container-images-footer{
+   width: 50%;
+   padding: 10px;
+   border: 1px;
+   text-align: center;
+}
+
+.acred-logo{
+   width: 80%;
+}
+
+@media (max-width:760px){
+    header{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    .nav-bar a{
+        color:#000;
+    }
+    .nav-bar a{
+        color: #fff;
+    }
+
+    .contenedor-slider{
+        max-width: 100%;
+    }
+}
+
+
